@@ -17,16 +17,24 @@ body {
 }
 
 .wedding-photo {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .wedding-place {
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* .wedding-place {
     max-width: 50%;
     height: auto;
     border-radius: 10px;
-}
+} */
 
 h1, h2 {
     color: #333;
