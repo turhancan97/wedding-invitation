@@ -43,11 +43,14 @@ def guest(guest_name):
 
     if request.method == 'POST':
         # Extract attendance information from the form
-        attendance = request.form.get('attendance')
+        attendance = request.form.get(GOOGLE_FORM_ATTENDANCE_FIELD)
+        answer = request.form.get(GOOGLE_FORM_OTHER_FIELD)
+
         # Prepare data for submission to Google Forms
         form_data = {
-            GOOGLE_FORM_NAME_FIELD: guest_name,
+            GOOGLE_FORM_NAME_FIELD: display_name,
             GOOGLE_FORM_ATTENDANCE_FIELD: attendance,
+            GOOGLE_FORM_OTHER_FIELD: answer,
         }
         # Submit data to Google Forms
         response = requests.post(GOOGLE_FORM_ACTION, data=form_data)
@@ -57,6 +60,7 @@ def guest(guest_name):
         else:
             # Handle submission error
             return "There was an error submitting your response. Please try again."
+
     return render_template('guest.html', guest_name=display_name,
                            google_form_action=GOOGLE_FORM_ACTION,
                            name_field=GOOGLE_FORM_NAME_FIELD,
@@ -77,4 +81,4 @@ def page_not_found(e):
 
 # Run Flask app
 if __name__ == "__main__":
-    app.run()  # host='0.0.0.0', port=8080, debug=True
+    app.run(host='0.0.0.0', port=8080, debug=True)
