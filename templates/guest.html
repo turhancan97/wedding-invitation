@@ -8,8 +8,8 @@
     <div class="form-container">
         <h2>Invitation for the Wedding</h2>
         <p>{{ guest_name }}, will you attend our wedding?</p>
-        <form method="POST">
-            <input type="hidden" name="{{ name_field }}" value="{{ guest_name }}">
+        <form action="{{ google_form_action }}" method="POST">
+            <input type="hidden" name="{{ name_field }}" value="{{ guest_name.replace(' and ', '_') }}">
             <select name="{{ attendance_field }}" class="dropdown">
                 <option value="Yes">Yes, I will attend</option>
                 <option value="No">No, I will not attend</option>
