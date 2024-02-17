@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RSVP</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Invitation for the Wedding</h2>
+        <p>{{ guest_name }}, will you attend our wedding?</p>
+        <form method="POST">
+            <input type="hidden" name="{{ name_field }}" value="{{ guest_name }}">
+            <select name="{{ attendance_field }}" class="dropdown">
+                <option value="Yes">Yes, I will attend</option>
+                <option value="No">No, I will not attend</option>
+            </select>
+            <p>If there will be someone who will not come to the wedding, please write that person here!</p>
+            <input type="text" name="{{ other_field }}">
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
