@@ -6,19 +6,35 @@
 </head>
 <body>
     <div class="form-container">
-        <h2>Invitation for the Wedding</h2>
+        <h2>Zaproszenie na ślub 📩</h2>
         <!-- Insert the image above the attendance field -->
-        <img src="https://github.com/turhancan97/turhancan97/assets/22428774/5d837228-da3f-4f87-9f22-419786a05368" alt="Wedding Invitation Photo" class="wedding-photo">
-        <p>{{ guest_name }}, will you attend our wedding?</p>
+        <img src="https://github.com/turhancan97/turhancan97/assets/22428774/ce25c6de-133f-489b-b407-b86ae72fff19" alt="Wedding Invitation Photo" class="wedding-photo">
+        <h3>Mamy dla Was krótką wiadomość:</h3>
+        <div class="italic-centered">
+            <p>Szanowni Goście,</p>
+            <p>Niedługo w naszym życiu zaczyna się etap nowy,<br>
+            Wiadomość więc krótka - element drugoplanowy,<br>
+            Tudzież wesele nasze będzie w pełni wegańskie,<br>
+            Bez mleka, bez jaj, bez mięsa - za to jajcarskie! 🌱</p>
+        
+            <p>Z góry zapewniamy - każdy kęs Was zaskoczy i na parkiet porwie,<br>
+            Jeśli umysły Wasze będą otwarte, to i żołądków głód nie dorwie,<br>
+            Tylko prosimy, nasz wybór uszanujcie - bo bez zbędnego krycia,<br>
+            Na ten jeden wieczór zachęcamy Was do naszego stylu życia.</p>
+        
+            <p>Ewelina i Turhan Was serdecznie zapraszają,<br>
+            Na wesele, gdzie miłość i empatia w tańcu się uzupełniają.</p>
+        </div>        
+        <h2>{{ guest_name }}, czy będziesz (będziecie) na naszym weselu? 👰‍♀️🤵🏽</h2>
         <form method="POST">
             <input type="hidden" name="{{ name_field }}" value="{{ guest_name }}">
             <select name="{{ attendance_field }}" class="dropdown">
-                <option value="Yes">Yes, I will attend</option>
-                <option value="No">No, I will not attend</option>
+                <option value="Yes">Tak, oczywiście, że będę (będziemy) na weselu! 💃🕺🏼</option>
+                <option value="No">Nie, niestety nie dam(y) rady się pojawić 😿</option>
             </select>
-            <p>If there will be someone who will not come to the wedding, please write that person here!</p>
+            <p>❗Jeśli chcesz (chcecie) przekazać nam coś ważnego (np. alergia pokarmowa, obecność osoby towarzyszącej), napisz(cie) to proszę tutaj</p>
             <input type="text" name="{{ other_field }}">
-            <button type="submit" class="submit-btn">Submit</button>
+            <button type="submit" class="submit-btn">💫Prześlij💫</button>
         </form>
     </div>
 </body>

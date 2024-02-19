@@ -12,8 +12,13 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 600px;
+    width: 100%; /* Increase the width to 95% */
+    max-width: 1000px; /* Increase the max-width to 800px */
+}
+
+.italic-centered {
+    text-align: center;
+    font-style: italic;
 }
 
 .wedding-photo {
