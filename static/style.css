@@ -24,9 +24,15 @@ body {
 
 .wedding-photo {
     max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    /* height: auto; */
+    border-radius: 20px;
     margin-bottom: 20px;
+    margin-left: -10px;
+    margin-right: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(191, 97, 196, 0.604);
+    /* border: 10px solid #ccc; */
 }
 
 .wedding-place {
