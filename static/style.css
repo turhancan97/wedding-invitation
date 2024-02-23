@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 
-.welcome-container, .form-container {
+.form-container {
     background-color: white;
     margin: auto;
     padding: 20px;
