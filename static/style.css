@@ -18,7 +18,8 @@ body {
 
 .italic-centered {
     text-align: center;
-    font-style: italic;
+    font-style: oblique;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .wedding-photo {
@@ -52,13 +53,36 @@ h1, h2 {
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .submit-btn {
-    background-color: #4CAF50;
+    background-color: #c780c9;
     color: white;
     border: none;
     cursor: pointer;
+    /* make bigger */
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    /* border: 5px solid #000000; */
+}
+
+.text-field {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .submit-btn:hover {

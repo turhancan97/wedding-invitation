@@ -13,9 +13,9 @@ def adjust_name(guest_name):
     if 'Wujek_' in guest_name or 'Ciocia_' in guest_name:
         # delete 'Wujek' or 'Ciocia' from the guest name
         guest_name = guest_name.replace('Wujek_', 'Wujek ').replace('Ciocia_', 'Ciocia ')
-    if '_z_osobą_towarzyszącą' in guest_name:
-        # delete '_z_osobą_towarzyszącą' from the guest name
-        guest_name = guest_name.replace('_z_osobą_towarzyszącą', ' z osobą towarzyszącą')
+    if '_z_osoba_towarzyszaca' in guest_name:
+        # delete '_z_osoba_towarzyszaca' from the guest name
+        guest_name = guest_name.replace('_z_osoba_towarzyszaca', ' z osobą towarzyszącą')
     if 'Pan_' in guest_name or 'Pani_' in guest_name:
         guest_name = guest_name.replace('Pan_', 'Pan ').replace('Pani_', 'Pani ')
     # split guest names by underscore
@@ -23,7 +23,7 @@ def adjust_name(guest_name):
     # # capitalize each name
     # guest_names = [name.capitalize() for name in guest_names]
     # join guest names with space and add 'and' before the last name
-    display_name = ' and '.join(', '.join(guest_names).rsplit(', ', 1))
+    display_name = ' i '.join(', '.join(guest_names).rsplit(', ', 1))
     return display_name
 
 # Google Form action URL and field names

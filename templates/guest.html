@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>RSVP</title>
+    <title>Zaproszenie ślubne</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -15,7 +15,7 @@
             <p>Niedługo w naszym życiu zaczyna się etap nowy,<br>
             Wiadomość więc krótka - element drugoplanowy,<br>
             Tudzież wesele nasze będzie w pełni wegańskie,<br>
-            Bez mleka, bez jaj, bez mięsa - za to jajcarskie! 🌱</p>
+            Bez mleka, bez jaj, bez mięsa - za to jajcarskie!</p>
         
             <p>Z góry zapewniamy - każdy kęs Was zaskoczy i na parkiet porwie,<br>
             Jeśli umysły Wasze będą otwarte, to i żołądków głód nie dorwie,<br>
@@ -32,8 +32,8 @@
                 <option value="Yes">Tak, oczywiście, że będę (będziemy) na weselu! 💃🕺🏼</option>
                 <option value="No">Nie, niestety nie dam(y) rady się pojawić 😿</option>
             </select>
-            <p>❗Jeśli chcesz (chcecie) przekazać nam coś ważnego (np. alergia pokarmowa, obecność osoby towarzyszącej), napisz(cie) to proszę tutaj</p>
-            <input type="text" name="{{ other_field }}">
+            <h3>❗Jeśli chcesz (chcecie) przekazać nam coś ważnego (np. alergia pokarmowa, obecność osoby towarzyszącej), napisz(cie) to proszę tutaj</h3>
+            <input type="text" name="{{ other_field }}" class="text-field">
             <button type="submit" class="submit-btn">💫Prześlij💫</button>
         </form>
     </div>
