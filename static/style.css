@@ -89,6 +89,8 @@ h1, h2 {
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid #ccc;
+    /* make it bigger */
+    font-size: 50px;
 }
 
 .submit-btn:hover {
