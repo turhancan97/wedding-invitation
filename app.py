@@ -27,10 +27,10 @@ def adjust_name(guest_name):
     return display_name
 
 # Google Form action URL and field names
-id_ = '1FAIpQLSePrW3HyhlIZjGESl2vSWTsb9Av0C4wTpTxAqzkvqcD5JBGEw'
-x_ = '1443085787'
-y_ = '1938995793'
-z_ = '164125452'
+id_ = '1FAIpQLSdi897ORN2YPNSvG7Yagh1yRN1KKDJU5ORbdNZQ9KrHYfjqqg'
+x_ = '2006475847'
+y_ = '455591977'
+z_ = '245816835'
 GOOGLE_FORM_ACTION = f"https://docs.google.com/forms/d/e/{id_}/formResponse"
 GOOGLE_FORM_NAME_FIELD = f"entry.{x_}"
 GOOGLE_FORM_ATTENDANCE_FIELD = f"entry.{y_}"
