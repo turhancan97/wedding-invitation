@@ -18,6 +18,9 @@ def adjust_name(guest_name):
         guest_name = guest_name.replace('_z_osoba_towarzyszaca', ' z osobą towarzyszącą')
     if 'Pan_' in guest_name or 'Pani_' in guest_name:
         guest_name = guest_name.replace('Pan_', 'Pan ').replace('Pani_', 'Pani ')
+    if '_Nowak' in guest_name:
+        guest_name = guest_name.replace('_Nowak', ' Nowak')
+
     # split guest names by underscore
     guest_names = guest_name.split('_')
     # # capitalize each name
