@@ -42,7 +42,7 @@ cd wedding-invitation
 
 2. Install the dependencies:
 
-```
+```sh
 conda env create -f environment.yml
 conda activate wedding-invitation
 ```
@@ -92,7 +92,7 @@ git push heroku main
 
 7. Customization:
 
-* **HTML Templates:** Modify the HTML templates in the templates directory to customize the look and feel of the website. There are spots for you to add your own images, such as your designed invitation card. Replace the placeholders with the URLs of your images.
+* **HTML Templates:** Modify the HTML templates in the templates directory to customize the look and feel of the website. There are spots for you to add your own images (**PUT A IMAGE OF YOURS HERE**), such as your designed invitation card. Replace the placeholders with the URLs of your images.
 
 * **CSS:** You can update static/css/style.css to change the styling.
 
