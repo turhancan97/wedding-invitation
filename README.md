@@ -76,8 +76,8 @@ GOOGLE_FORM_OTHER_FIELD = 'YOUR_GOOGLE_FORM_OTHER_FIELD'
 ```
 https://docs.google.com/forms/d/e/1FAIpQLSdi897ORN2YPNSvG7Yagh1yRN1KKDJU5ORbdNZQ9KrHYfjqqg/viewform
 ```
-3. The ID of the form is the part after `/d/` and before `/viewform`. In this case, the ID is `1FAIpQLSdi897ORN2YPNSvG7Yagh1yRN1KKDJU5ORbdNZQ9KrHYfjqqg`.
 
+3. The ID of the form is the part after `/d/` and before `/viewform`. In this case, the ID is `1FAIpQLSdi897ORN2YPNSvG7Yagh1yRN1KKDJU5ORbdNZQ9KrHYfjqqg`.
 4. The field names are the names of the fields in the form.
 5. You can find the field names by inspecting the form. Right-click on the field and click on inspect. You can see example below:
 
@@ -106,8 +106,8 @@ python app.py
 
 6. Deploy the application to Heroku (check the [Heroku documentation](https://devcenter.heroku.com/articles/getting-started-with-python)):
 
-6.1. Create a new app on Heroku
-6.2. Follow the instruction from the *Deploy using Heroku Git* section of the app.
+* Create a new app on Heroku
+* Follow the instruction from the *Deploy using Heroku Git* section of the app.
 
 7. Customization:
 
