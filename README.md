@@ -115,9 +115,12 @@ git push heroku main
 * **CSS:** You can update static/css/style.css to change the styling.
 * **Guest List:** Update the guests.json file with the names of your guests.
 * The function adjust_name in the app.py file is used to adjust the names in the guests.json file to be used in the URL. You can modify this function to adjust the names as you like.
+* You can buy a domain and link it to your Heroku app to have a custom domain for your wedding website. I recommend using [Namecheap](https://www.namecheap.com/) for buying domains.
 
 ## Contributing
 
 Feel free to fork this repository and make your own enhancements. Pull requests are welcome.
 
 ## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
