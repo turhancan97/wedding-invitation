@@ -159,8 +159,8 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Ignore the guests.json file
-guests.json
+# # Ignore the guests.json file
+# guests.json
 
 # Ignore environment files
 .env
