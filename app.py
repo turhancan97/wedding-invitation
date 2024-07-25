@@ -1,6 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for, abort
 import requests
 import json
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -30,10 +35,11 @@ def adjust_name(guest_name):
     return display_name
 
 # Google Form action URL and field names
-id_ = '1FAIpQLSdi897ORN2YPNSvG7Yagh1yRN1KKDJU5ORbdNZQ9KrHYfjqqg'
-x_ = '2006475847'
-y_ = '455591977'
-z_ = '245816835'
+id_ = os.getenv('GOOGLE_FORM_ID')
+x_ = os.getenv('GOOGLE_FORM_NAME_FIELD')
+y_ = os.getenv('GOOGLE_FORM_ATTENDANCE_FIELD')
+z_ = os.getenv('GOOGLE_FORM_OTHER_FIELD')
+
 GOOGLE_FORM_ACTION = f"https://docs.google.com/forms/d/e/{id_}/formResponse"
 GOOGLE_FORM_NAME_FIELD = f"entry.{x_}"
 GOOGLE_FORM_ATTENDANCE_FIELD = f"entry.{y_}"
