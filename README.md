@@ -3,6 +3,7 @@
 This is a Flask-based web application for managing wedding invitations. Guests can confirm their attendance through a Google Form embedded in the website.
 
 ## Features
+
 - Personalized invitation pages for each guest.
 - Integration with Google Forms for attendance confirmation.
 - Easy customization for different weddings.
@@ -91,8 +92,9 @@ git push heroku main
 
 7. Customization:
 
-* **HTML Templates:** Modify the HTML templates in the templates directory to customize the look and feel of the website.
-* **CSS:** Update static/css/style.css to change the styling.
+* **HTML Templates:** Modify the HTML templates in the templates directory to customize the look and feel of the website. There are spots for you to add your own images, such as your designed invitation card. Replace the placeholders with the URLs of your images.
+
+* **CSS:** You can update static/css/style.css to change the styling.
 
 ## Contributing
 
