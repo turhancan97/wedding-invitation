@@ -83,7 +83,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdi897ORN2YPNSvG7Yagh1yRN1KKDJU5ORbdNZQ
 
 ![field](static/img/inspect.png)
 
-6. Create a `guests.json` file with the following structure:
+4. Create a `guests.json` file with the following structure:
 
 ```json
 [
@@ -106,12 +106,8 @@ python app.py
 
 6. Deploy the application to Heroku (check the [Heroku documentation](https://devcenter.heroku.com/articles/getting-started-with-python)):
 
-```sh
-heroku login
-git add .
-git commit -am "make it better"
-git push heroku main
-```
+6.1. Create a new app on Heroku
+6.2. Follow the instruction from the *Deploy using Heroku Git* section of the app.
 
 7. Customization:
 
