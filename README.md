@@ -56,12 +56,30 @@ GOOGLE_FORM_ATTENDANCE_FIELD = 'YOUR_GOOGLE_FORM_ATTENDANCE_FIELD'
 GOOGLE_FORM_OTHER_FIELD = 'YOUR_GOOGLE_FORM_OTHER_FIELD'
 ```
 
-3.1. How to get Google Form:
+3.1. How to create Google Form:
+
+1. Go to [Google Forms](https://docs.google.com/forms/u/0/).
+2. Open empty form
+3. Make your form something like below:
+
+![form](static/img/form.png)
 
 3.2. How to get Google Form ID and Field Names:
 
+1. Click on the send button and get the link of the form.
+2. The link will be like below:
 
-4. Create a `guests.json` file with the following structure:
+```
+https://docs.google.com/forms/d/e/1FAIpQLSdi897ORN2YPNSvG7Yagh1yRN1KKDJU5ORbdNZQ9KrHYfjqqg/viewform
+```
+3. The ID of the form is the part after `/d/` and before `/viewform`. In this case, the ID is `1FAIpQLSdi897ORN2YPNSvG7Yagh1yRN1KKDJU5ORbdNZQ9KrHYfjqqg`.
+
+4. The field names are the names of the fields in the form.
+5. You can find the field names by inspecting the form. Right-click on the field and click on inspect. You can see example below:
+
+![field](static/img/inspect.png)
+
+6. Create a `guests.json` file with the following structure:
 
 ```json
 [
@@ -71,7 +89,8 @@ GOOGLE_FORM_OTHER_FIELD = 'YOUR_GOOGLE_FORM_OTHER_FIELD'
     "Aunt_Mary",
     "Mr_Smith",
     "Mrs_Smith",
-    "Billy_with_an_other_person"
+    "Billy_with_an_other_person",
+    "Sally_Gordon"
 ]
 ```
 
@@ -93,8 +112,9 @@ git push heroku main
 7. Customization:
 
 * **HTML Templates:** Modify the HTML templates in the templates directory to customize the look and feel of the website. There are spots for you to add your own images (**PUT A IMAGE OF YOURS HERE**), such as your designed invitation card. Replace the placeholders with the URLs of your images.
-
 * **CSS:** You can update static/css/style.css to change the styling.
+* **Guest List:** Update the guests.json file with the names of your guests.
+* The function adjust_name in the app.py file is used to adjust the names in the guests.json file to be used in the URL. You can modify this function to adjust the names as you like.
 
 ## Contributing
 
