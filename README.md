@@ -19,6 +19,9 @@ wedding-invitation
 ├── environment.yml        # Conda environment file
 ├── README.md              # Project documentation
 ├── app.py                 # Main application file
+├── .env                   # Environment variables
+├── LICENSE                # License information
+├── .gitignore             # Files and directories to be ignored by Git
 ├── templates/             # HTML templates
 │   ├── home.html
 │   ├── guest.html
@@ -27,6 +30,7 @@ wedding-invitation
 └── static/
     └── css/
         └── style.css      # Custom CSS
+    └── img/               # Images
 ```
 
 ## Getting Started
