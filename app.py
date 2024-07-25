@@ -15,16 +15,18 @@ with open('guests.json') as f:
     names = json.load(f)
 
 def adjust_name(guest_name):
-    if 'Wujek_' in guest_name or 'Ciocia_' in guest_name:
-        # delete 'Wujek' or 'Ciocia' from the guest name
-        guest_name = guest_name.replace('Wujek_', 'Wujek ').replace('Ciocia_', 'Ciocia ')
-    if '_z_osoba_towarzyszaca' in guest_name:
-        # delete '_z_osoba_towarzyszaca' from the guest name
-        guest_name = guest_name.replace('_z_osoba_towarzyszaca', ' z osobą towarzyszącą')
-    if 'Pan_' in guest_name or 'Pani_' in guest_name:
-        guest_name = guest_name.replace('Pan_', 'Pan ').replace('Pani_', 'Pani ')
-    if '_Nowak' in guest_name:
-        guest_name = guest_name.replace('_Nowak', ' Nowak')
+    '''Adjust guest name for display'''
+    if 'Uncle_' in guest_name or 'Aunt_' in guest_name:
+        # delete 'Uncle' or 'Aunt' from the guest name
+        guest_name = guest_name.replace('Uncle_', 'Uncle ').replace('Aunt_', 'Aunt ')
+    if '_with_an_other_person' in guest_name:
+        # delete '_with_an_other_person' from the guest name
+        guest_name = guest_name.replace('_with_an_other_person', ' with an other person')
+    if 'Mr_' in guest_name or 'Mrs_' in guest_name:
+        # replace 'Mr_' or 'Mrs_' with 'Mr ' or 'Mrs '
+        guest_name = guest_name.replace('Mr_', 'Mr ').replace('Mrs_', 'Mrs ')
+    if '_Gordon' in guest_name:
+        guest_name = guest_name.replace('_Gordon', ' Gordon')
 
     # split guest names by underscore
     guest_names = guest_name.split('_')
