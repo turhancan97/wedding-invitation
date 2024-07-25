@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Zaproszenie ślubne 💚</title>
+    <title>Wedding invitation 💚</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div>
-        <h2>Zaproszenie na ślub 📩</h2>
+        <h2>Wedding invitation 📩</h2>
         <!-- Insert the image above the attendance field -->
-        <img src="https://github.com/turhancan97/turhancan97/assets/22428774/ce25c6de-133f-489b-b407-b86ae72fff19" alt="Wedding Invitation Photo" class="wedding-photo">
-        <h3>Mamy dla Was krótką wiadomość:</h3>
+        <img src="PUT A IMAGE OF YOURS HERE" alt="Wedding Invitation Photo" class="wedding-photo">
+        <h3>We have a short message for you:</h3>
         <div class="italic-centered">
-            <p>Szanowni Goście,</p>
-            <p>Niedługo w naszym życiu zaczyna się etap nowy,<br>
-            Wiadomość więc krótka - element drugoplanowy,<br>
-            Tudzież wesele nasze będzie w pełni wegańskie,<br>
-            Bez mleka, bez jaj, bez mięsa - za to jajcarskie!</p>
+            <p>Dear Guests,</p>
+            <p>Soon a new stage begins in our lives,<br>
+            YOU CAN WRITE HERE<br>
+            SOME NICE WORDS FOR THE GUESTS</p>
         
-            <p>Z góry zapewniamy - każdy kęs Was zaskoczy i na parkiet porwie,<br>
-            Jeśli umysły Wasze będą otwarte, to i żołądków głód nie dorwie,<br>
-            Tylko prosimy, nasz wybór uszanujcie - bo bez zbędnego krycia,<br>
-            Na ten jeden wieczór zachęcamy Was do naszego stylu życia.</p>
-        
-            <p>Ewelina i Turhan Was serdecznie zapraszają,<br>
-            Na wesele, gdzie miłość i empatia w tańcu się uzupełniają.</p>
+            <p>ANOTHER PARAGRAPH<br>
+            TO WRITE SOMETHING</p>
         </div>        
-        <h2>{{ guest_name }}, czy będziesz (będziecie) na naszym weselu? 👰‍♀️🤵🏽</h2>
+        <h2>{{ guest_name }}, will you be at our wedding? 👰‍♀️🤵🏽</h2>
         <form method="POST">
             <input type="hidden" name="{{ name_field }}" value="{{ guest_name }}">
             <select name="{{ attendance_field }}" class="dropdown">
-                <option value="Yes">Tak, oczywiście, że będę (będziemy) na weselu! 💃🕺🏼</option>
-                <option value="No">Nie, niestety nie dam(y) rady się pojawić 😿</option>
+                <option value="Yes">Yes, of course I will (we will) be at the wedding! 💃🕺🏼</option>
+                <option value="No">No, unfortunately I (we) won't be able to attend 😿</option>
             </select>
-            <h3>❗Jeśli chcesz (chcecie) przekazać nam coś ważnego (np. alergia pokarmowa, obecność osoby towarzyszącej lub jakaś wiadomość), napisz(cie) to proszę tutaj.</h3>
+            <h3>❗If you want to tell us something important (such as a food allergy, the presence of a companion or any message), please write it here.</h3>
             <input type="text" name="{{ other_field }}" class="text-field">
-            <button type="submit" class="submit-btn">💫Prześlij💫</button>
+            <button type="submit" class="submit-btn">💫Submit💫</button>
         </form>
     </div>
 </body>
